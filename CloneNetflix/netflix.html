@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX CLONE</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Start</a>
+                <a href="#">Movies</a>
+                <a href="#">Series</a>
+                <a href="#">Documentaries</a>
+            </nav>
+            
+        </div>
+    </header>
+    
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">AQUAMAN</h3>
+                <p class="descricao">A cidade de Atlantis, que já foi lar de uma das 
+                    mais avançadas civilizações do mundo, agora é um reino submerso
+                    dominado pelo ganancioso Rei Orm.   
+                </p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        MORE INFORMATION
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imgnetflix/BloodRedSky.jpg"></div>
+            <div class="swiper-slide"><img src="imgnetflix/Jolt.jpg"></div>
+            <div class="swiper-slide"><img src="imgnetflix/CacadoresdeDemonios.jpg"></div>
+            <div class="swiper-slide"><img src="imgnetflix/CodigodeConduta.jpg"></div>
+            <div class="swiper-slide"><img src="imgnetflix/Cruella.jpg"></div>
+            <div class="swiper-slide"><img src="imgnetflix/LoboGuerreiro.jpg"></div>
+            <div class="swiper-slide"><img src="imgnetflix/CacadoresdeTrolls.jpg"></div>
+            <div class="swiper-slide"><img src="imgnetflix/PerigoMontanha.jpg"></div>
+            <div class="swiper-slide"><img src="imgnetflix/ViuvaNegra.jpg"></div>
+            <div class="swiper-slide"><img src="imgnetflix/TheForeverPurge.jpg"></div>
+            <div class="swiper-slide"><img src="imgnetflix/Superman.jpg"></div>
+            <div class="swiper-slide"><img src="imgnetflix/Invocacao.jpg"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+    slidesPerView: 6,
+    spaceBetween: 40,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination:{
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextE1:'.swiper-button-next',
+        prevE1:'.swiper-button-prev',
+    }
+});
+    </script>
+</body>
+</html>
